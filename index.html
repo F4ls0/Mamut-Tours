@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamut Tours</title>
+<meta name="description" content="Tours privados de turismo en van por Medellín y Antioquia. Comuna 13, Guatapé, Pueblito Paisa y más, con un conductor local de confianza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header id="cabecera">
+  <div class="contenedor nav">
+    <a href="#" class="logo">
+      <div class="logo-icono"><img src="mamut.png" alt="Mamut Tours"></div>
+      <div>
+        <div class="marca">Mamut Tours</div>
+        <div class="sub">Tours Privados en Van</div>
+      </div>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#destinos">Destinos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#acerca">Quiénes somos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/573043788310" class="btn-wa cta" target="_blank" rel="noopener">Reservar</a>
+    </nav>
+    <a href="https://wa.me/573043788310" class="btn-wa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.728-.978zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      WhatsApp
+    </a>
+    <button class="menu-toggle" id="hamburguesa" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="grano"></div>
+  <svg class="montanas" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#0c241b" fill-opacity="0.6" d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,202.7C1120,203,1280,181,1360,170.7L1440,160L1440,320L0,320Z"></path>
+    <path fill="#0a1f17" d="M0,256L60,245.3C120,235,240,213,360,224C480,235,600,277,720,277.3C840,277,960,235,1080,224C1200,213,1320,235,1380,245.3L1440,256L1440,320L0,320Z"></path>
+  </svg>
+  <div class="contenedor hero-inner">
+    <span class="pill">Medellín · Antioquia · Colombia</span>
+    <h1>
+      <span class="ln">Descubre la <em>ciudad de la</em></span>
+      <span class="ln">eterna primavera</span>
+    </h1>
+    <p class="lead">Tours privados y cómodos en van por los rincones más bellos de Medellín y sus alrededores. Un guía local que conoce cada calle, cada historia y cada mirador.</p>
+    <div class="hero-cta">
+      <a href="#destinos" class="btn-ghost btn-grande">Ver destinos</a>
+      <a href="https://wa.me/573043788310" target="_blank" rel="noopener" class="btn-wa btn-grande">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.728-.978zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Reservar ahora
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">+10</div><div class="lbl">años de experiencia</div></div>
+      <div class="stat"><div class="num">100%</div><div class="lbl">tours privados</div></div>
+      <div class="stat"><div class="num">★ 4.9</div><div class="lbl">reseñas de viajeros</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARRUSEL DESTINOS ============ -->
+<section class="destinos" id="destinos">
+  <div class="contenedor">
+    <div class="encabezado-seccion reveal">
+      <div class="etiqueta">Lugares para visitar</div>
+      <h2>Destinos imperdibles</h2>
+      <p>Cada recorrido se adapta a tus gustos. Estos son algunos de los lugares favoritos de nuestros viajeros, dentro y fuera de la ciudad.</p>
+    </div>
+
+    <div class="carrusel reveal">
+      <div class="pista-wrap">
+        <div class="pista" id="pista">
+
+          <!-- DESTINO 1 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f1"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">01 / Cultura urbana</div>
+                <h3>Comuna 13</h3>
+                <p>Grafitis de colores, escaleras eléctricas y hip-hop. La historia de transformación más inspiradora de Medellín, contada por sus propios artistas.</p>
+                <div class="tags-destino"><span>Arte urbano</span><span>Tour a pie</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- DESTINO 2 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f2"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20V9l6-5 6 5v11M9 20v-6h6v6"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">02 / Excursión de día</div>
+                <h3>Guatapé y El Peñón</h3>
+                <p>Sube los 740 escalones de la imponente piedra para una vista de 360° del embalse, y recorre el pueblo más colorido de Colombia con sus zócalos pintados.</p>
+                <div class="tags-destino"><span>Naturaleza</span><span>Mirador</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- DESTINO 3 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f3"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M4 21h16M9 21v-5a3 3 0 016 0v5M2 8h20"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">03 / Tradición paisa</div>
+                <h3>Pueblito Paisa</h3>
+                <p>En la cima del Cerro Nutibara, una réplica de un típico pueblo antioqueño de antaño con la mejor vista panorámica de toda la ciudad.</p>
+                <div class="tags-destino"><span>Mirador</span><span>Cultura</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- DESTINO 4 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f4"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M12 2v20M12 6c-3-3-7-2-7-2s-1 4 2 7M12 10c3-3 7-2 7-2s1 4-2 7"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">04 / Aire libre</div>
+                <h3>Parque Arví</h3>
+                <p>Llega en metrocable sobrevolando la montaña hasta este enorme reserva natural. Senderos ecológicos, mercado campesino y aire puro a un paso de la ciudad.</p>
+                <div class="tags-destino"><span>Ecoturismo</span><span>Metrocable</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- DESTINO 6 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f6"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 2-7 5-8M12 12c0-4-2-7-5-8M7 16c-2 1-4 3-4 6M17 16c2 1 4 3 4 6"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">06 / Naturaleza urbana</div>
+                <h3>Jardín</h3>
+                <p>Un encantador pueblo antioqueño rodeado de montañas y paisajes cafeteros, reconocido por sus coloridas fachadas, clima agradable y ambiente tranquilo. Ideal para disfrutar de la naturaleza, la cultura paisa y la hospitalidad de su gente mientras se recorren sus calles tradicionales y miradores naturales.</p>
+                <div class="tags-destino"><span>Jardines</span><span>Familiar</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- DESTINO 7 -->
+          <div class="slide">
+            <article class="tarjeta-destino">
+              <div class="foto f7"></div>
+              <div class="icono-grande"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-6 8 6v12M4 21h16M10 21v-4h4v4M8 12h.01M16 12h.01"/></svg></div>
+              <div class="info-destino">
+                <div class="num-destino">07 / Pueblo colonial</div>
+                <h3>Santa Fe de Antioquia</h3>
+                <p>La antigua capital del departamento, con calles empedradas, casonas blancas y el histórico Puente de Occidente. Un viaje al pasado colonial.</p>
+                <div class="tags-destino"><span>Historia</span><span>Excursión</span></div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="controles">
+        <div class="puntos" id="puntos"></div>
+        <div class="flechas">
+          <button class="flecha" id="anterior" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="flecha" id="siguiente" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="servicios" id="servicios">
+  <div class="contenedor">
+    <div class="encabezado-seccion reveal">
+      <div class="etiqueta">Lo que ofrecemos</div>
+      <h2>Viaja cómodo y sin preocupaciones</h2>
+      <p>Un servicio pensado para que solo te dediques a disfrutar.</p>
+    </div>
+    <div class="grid-servicios">
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17h2l1-5h12l1 5h2M5 17v2M19 17v2M6 12V7a1 1 0 011-1h10a1 1 0 011 1v5M8 17h8"/></svg></div>
+        <h3>Van privada y cómoda</h3>
+        <p>Vehículo amplio, con aire acondicionado y mantenimiento al día. Recorridos solo para ti y tu grupo, a tu propio ritmo.</p>
+      </div>
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>Guía local de confianza</h3>
+        <p>Conductor con amplia experiencia que conoce cada rincón, las mejores horas para visitar y las historias que no salen en las guías.</p>
+      </div>
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Horarios flexibles</h3>
+        <p>Tú decides a qué hora salir y cuánto tiempo quedarte en cada lugar. Diseñamos el itinerario según tus intereses.</p>
+      </div>
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><path d="M9 11l2 2 4-4"/></svg></div>
+        <h3>Recogida en tu hotel</h3>
+        <p>Te recogemos y te dejamos en la puerta de tu alojamiento, en cualquier zona de la ciudad. Sin complicaciones ni traslados extra.</p>
+      </div>
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Tours en familia o grupo</h3>
+        <p>Ideal para familias, parejas o grupos de amigos. Atención cercana y un trato amable durante todo el recorrido.</p>
+      </div>
+      <div class="servicio reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+        <h3>Itinerarios a medida</h3>
+        <p>¿Quieres mezclar ciudad, naturaleza y café? Combinamos varios destinos en un solo día para que aproveches al máximo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACERCA ============ -->
+<section class="acerca" id="acerca">
+  <div class="contenedor acerca-grid">
+    <div class="acerca-foto reveal">
+      <!-- Reemplaza el fondo de .acerca-foto por una foto real de tu padre o su van -->
+      <div class="ph">
+        <svg viewBox="0 0 24 24"><path d="M3 17h2l1-5h12l1 5h2M5 17v2M19 17v2M6 12V7a1 1 0 011-1h10a1 1 0 011 1v5"/></svg>
+       
+      </div>
+    </div>
+    <div class="acerca-texto reveal">
+      <div class="etiqueta">Quiénes somos</div>
+      <h2>Más que un tour, una experiencia local</h2>
+      <p>Somos un servicio familiar de turismo en Medellín. Con más de una década recorriendo cada calle y cada montaña de Antioquia, conocemos la ciudad como nuestra propia casa.</p>
+      <p>Nuestro compromiso es simple: que te sientas seguro, cómodo y bienvenido, como si viajaras con un amigo de aquí.</p>
+      <ul class="check-list">
+        <li><span class="chk"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Atención personalizada en español e inglés</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Precios justos y todo claro desde el inicio</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Conductor puntual y responsable</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Conocimiento profundo de la cultura paisa</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contacto" id="contacto">
+  <div class="contenedor inner reveal">
+    <div class="etiqueta" style="justify-content:center;color:var(--dorado)">Reserva tu tour</div>
+    <h2>¿Listo para <em>conocer Medellín?</em></h2>
+    <p>Escríbenos por WhatsApp y cuéntanos qué te gustaría conocer. Te armamos el plan perfecto sin compromiso.</p>
+    <div class="contacto-botones">
+      <a href="https://wa.me/573043788310?text=Hola,%20quiero%20información%20sobre%20los%20tours%20en%20Medellín" target="_blank" rel="noopener" class="btn-wa grande">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.728-.978zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+    <div class="contacto-tel">o llámanos: <a href="tel:+573043788310">+57 304 378 8310</a></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="contenedor">
+    <div class="logo">
+      <div class="logo-icono"><img src="mamut.png" alt="Mamut Tours"></div>
+      <div>
+        <div class="marca">Mamut Tours</div>
+        <div class="sub">Tours Privados en Van</div>
+      </div>
+    </div>
+    <div class="redes">
+      <a href="https://wa.me/573043788310" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.728-.978zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.35 2.67.94 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 00-1.38-2.12A5.86 5.86 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-10.85a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
+    </div>
+    <p>© 2025 Medellín a tu Ritmo · Tours Privados en Van · Medellín, Colombia</p>
+  </div>
+</footer>
+
+<script>
+/* ===== NAV: fondo al hacer scroll + menú móvil ===== */
+const cabecera = document.getElementById('cabecera');
+window.addEventListener('scroll', () => {
+  cabecera.classList.toggle('scrolled', window.scrollY > 40);
+});
+const hamburguesa = document.getElementById('hamburguesa');
+const menu = document.getElementById('menu');
+hamburguesa.addEventListener('click', () => {
+  hamburguesa.classList.toggle('activo');
+  menu.classList.toggle('abierto');
+});
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  hamburguesa.classList.remove('activo');
+  menu.classList.remove('abierto');
+}));
+
+/* ===== CARRUSEL ===== */
+const pista = document.getElementById('pista');
+const slides = Array.from(pista.children);
+const puntosCont = document.getElementById('puntos');
+let indice = 0;
+let autoplay = null;
+
+// crear puntos
+slides.forEach((_, i) => {
+  const p = document.createElement('button');
+  p.className = 'punto' + (i === 0 ? ' activo' : '');
+  p.setAttribute('aria-label', 'Ir al destino ' + (i + 1));
+  p.addEventListener('click', () => irA(i));
+  puntosCont.appendChild(p);
+});
+const puntos = Array.from(puntosCont.children);
+
+function actualizar() {
+  pista.style.transform = `translateX(-${indice * 100}%)`;
+  puntos.forEach((p, i) => p.classList.toggle('activo', i === indice));
+}
+function irA(i) {
+  indice = (i + slides.length) % slides.length;
+  actualizar();
+  iniciarAuto(); // cualquier interacción del usuario reinicia el conteo de 5s
+}
+document.getElementById('siguiente').addEventListener('click', () => irA(indice + 1));
+document.getElementById('anterior').addEventListener('click', () => irA(indice - 1));
+
+// teclado
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') irA(indice + 1);
+  if (e.key === 'ArrowLeft') irA(indice - 1);
+});
+
+// autoplay: un solo temporizador. iniciarAuto() siempre borra el anterior
+// antes de crear uno nuevo, así nunca se acumulan varios a la vez.
+function iniciarAuto() {
+  clearInterval(autoplay);
+  autoplay = setInterval(() => irA(indice + 1), 5000);
+}
+function detenerAuto() {
+  clearInterval(autoplay);
+}
+iniciarAuto();
+const carrusel = document.querySelector('.carrusel');
+carrusel.addEventListener('mouseenter', detenerAuto);
+carrusel.addEventListener('mouseleave', iniciarAuto);
+
+// swipe táctil
+let xInicio = null;
+pista.addEventListener('touchstart', e => { xInicio = e.touches[0].clientX; detenerAuto(); }, {passive:true});
+pista.addEventListener('touchend', e => {
+  if (xInicio === null) return;
+  const dif = xInicio - e.changedTouches[0].clientX;
+  if (Math.abs(dif) > 50) irA(indice + (dif > 0 ? 1 : -1));
+  else iniciarAuto(); // si no fue un swipe real, vuelve a arrancar el conteo
+  xInicio = null;
+});
+
+/* ===== REVELADO AL HACER SCROLL ===== */
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observador.observe(el));
+</script>
+</body>
+</html>
